@@ -868,7 +868,7 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-description-img4,
 .portfolio .portfolio-item-inner .portfolio-description-img5,
 .portfolio .portfolio-item-inner .portfolio-description-img6 {
-    display: none;
+    display: block;
     text-align: center;
     max-height: 0;
     overflow: hidden;
