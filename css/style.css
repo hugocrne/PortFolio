@@ -295,7 +295,7 @@ ul
     background: var(--skin-color);
     position: absolute;
     top: 6px;
-    left: 0;
+    left: 0
 }
 
 .aside .nav-toggler.open span::after {
@@ -323,6 +323,7 @@ ul
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
     padding: 5px 15px;
+    text-decoration: none;
 }
 
 .aside .nav #texthomeenrouge a.active
@@ -378,6 +379,7 @@ h3.my-profession
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
+    text-align: justify;
 }
 
 .home .home-img
@@ -397,7 +399,7 @@ h3.my-profession
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 20px;
-    bottom: -20px;
+    bottom: 100px;
 }
 
 .home-img::before {
@@ -409,6 +411,11 @@ h3.my-profession
     border-left: 10px solid var(--skin-color);
     left: -0px;
     top: -40px;
+}
+
+#boutonLI
+{
+    margin-left: 20px;
 }
 
 .home .home-img img
@@ -476,6 +483,12 @@ h3.my-profession
     font-size: 16px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item p a
+{
+    text-decoration: none;
+    color: var(--text-black-700);
 }
 
 .about .about-content .personal-info .info-item p span
