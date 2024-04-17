@@ -96,3 +96,17 @@ document.getElementById("boutonCV").addEventListener("click", function() {
     link.click();
     document.body.removeChild(link);
 });
+
+function toggleDescription(portfolioId) {
+    var description = document.getElementById(portfolioId);
+    description.classList.toggle("show");
+}
+
+
+// Appel initial pour fermer toutes les descriptions au chargement de la page
+toggleDescription("portfolio-1");
+toggleDescription("portfolio-2");
+toggleDescription("portfolio-3");
+toggleDescription("portfolio-4");
+toggleDescription("portfolio-5");
+toggleDescription("portfolio-6");

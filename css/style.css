@@ -398,8 +398,8 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: 100px;
+    right: 30px;
+    bottom: 130px;
 }
 
 .home-img::before {
@@ -409,7 +409,7 @@ h3.my-profession
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -0px;
+    left: 20px;
     top: -40px;
 }
 
@@ -455,6 +455,7 @@ h3.my-profession
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+    text-align: justify;
 }
 
 .about .about-content .personal-info
@@ -483,6 +484,7 @@ h3.my-profession
     font-size: 16px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
+    text-align: justify;
 }
 
 .about .about-content .personal-info .info-item p a
@@ -661,19 +663,27 @@ h3.my-profession
     color: var(--text-black-700);
 }
 
-.service .container
+#end2, #end1
+{
+    margin-top: 20px;
+    width: 400px;
+    box-shadow: 0 0 20px black;
+    margin-left: 5%;
+}
+
+.competences .container
 {
     padding-bottom: 40px;
 }
 
-.service .service-item
+.competences .competences-item
 {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
 
-.service .service-item .service-item-inner
+.competences .competences-item .competences-item-inner
 {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -689,12 +699,12 @@ h3.my-profession
     margin-right: auto;
 }
 
-.service .service-item .service-item-inner:hover
+.competences .competences-item .competences-item-inner:hover
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.service .service-item .service-item-inner .icon
+.competences .competences-item .competences-item-inner .icon
 {
     height: 60px;
     width: 60px;
@@ -705,7 +715,7 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa
+.competences .competences-item .competences-item-inner .icon .fa
 {
     font-size: 40px;
     line-height: 60px;
@@ -713,18 +723,18 @@ h3.my-profession
     transition: all 0.3 ease;
 }
 
-.service .service-item .service-item-inner:hover .icon
+.competences .competences-item .competences-item-inner:hover .icon
 {
     background-color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa
+.competences .competences-item .competences-item-inner:hover .icon .fa
 {
     font-size: 25px;
     color: #ffffff;
 }
 
-.service.service-item .service-item-inner h4
+.competences.competences-item .competences-item-inner h4
 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -733,50 +743,156 @@ h3.my-profession
     text-transform: capitalize;
 }
 
-.service .service-item .service-item-inner p
+.competences .competences-item .competences-item-inner p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
 
-.portfolio .container
-{
+.qualites .container {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading
-{
+.qualites .qualites-item {
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.qualites .qualites-item .qualites-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.35 ease;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qualites .qualites-item .qualites-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.qualites .qualites-item .qualites-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto, 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.qualites .qualites-item .qualites-item-inner .icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3 ease;
+}
+
+.qualites .qualites-item .qualites-item-inner:hover .icon {
+    background-color: var(--skin-color);
+}
+
+.qualites .qualites-item .qualites-item-inner:hover .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.qualites.qualites-item .qualites-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.qualites .qualites-item .qualites-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+.portfolio .container {
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-heading h2
-{
+.portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
 }
 
-.portfolio .portfolio-item
-{
+.portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner
-{
+.portfolio .portfolio-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img
-{
+.portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
+}
+
+.portfolio .portfolio-item-inner .portfolio-description-img1 p,
+.portfolio .portfolio-item-inner .portfolio-description-img2 p,
+.portfolio .portfolio-item-inner .portfolio-description-img3 p,
+.portfolio .portfolio-item-inner .portfolio-description-img4 p,
+.portfolio .portfolio-item-inner .portfolio-description-img5 p,
+.portfolio .portfolio-item-inner .portfolio-description-img6 p {
+    color: var(--text-black-700);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-description-img1,
+.portfolio .portfolio-item-inner .portfolio-description-img2,
+.portfolio .portfolio-item-inner .portfolio-description-img3,
+.portfolio .portfolio-item-inner .portfolio-description-img4,
+.portfolio .portfolio-item-inner .portfolio-description-img5,
+.portfolio .portfolio-item-inner .portfolio-description-img6 {
+    display: none;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .portfolio-description-img1.show,
+.portfolio .portfolio-item-inner .portfolio-description-img2.show,
+.portfolio .portfolio-item-inner .portfolio-description-img3.show,
+.portfolio .portfolio-item-inner .portfolio-description-img4.show,
+.portfolio .portfolio-item-inner .portfolio-description-img5.show,
+.portfolio .portfolio-item-inner .portfolio-description-img6.show {
+    display: block;
+    max-height: 500px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-description-img1 a,
+.portfolio .portfolio-item-inner .portfolio-description-img2 a,
+.portfolio .portfolio-item-inner .portfolio-description-img3 a,
+.portfolio .portfolio-item-inner .portfolio-description-img4 a,
+.portfolio .portfolio-item-inner .portfolio-description-img5 a,
+.portfolio .portfolio-item-inner .portfolio-description-img6 a {
+    text-decoration: none;
+    color: var(--text-black-700);
 }
 
 .contact-title
@@ -924,13 +1040,19 @@ h3.my-profession
         display: block;
         margin-left: 0;
     }
+
+    #end2, #end1
+    {
+        width: 80%;
+    }
 }
 
 @media (max-width:991px)
 {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item
+    .qualites .qualites-item,
+    .competences .competences-item
     {
         flex: 0 0 50%;
         max-width: 50%;
@@ -955,7 +1077,8 @@ h3.my-profession
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item,
+    .qualites .qualites-item,
+    .competences .competences-item,
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
