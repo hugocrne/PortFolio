@@ -22,7 +22,7 @@ body
 {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 *
@@ -882,7 +882,7 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-description-img5.show,
 .portfolio .portfolio-item-inner .portfolio-description-img6.show {
     display: block;
-    max-height: 700px;
+    max-height: 00px;
 }
 
 .portfolio .portfolio-item-inner .portfolio-description-img1 a,
