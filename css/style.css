@@ -326,7 +326,7 @@ ul
     text-decoration: none;
 }
 
-.aside .nav #texthomeenrouge a.active
+.aside .nav a.active
 {
     color: var(--skin-color);
 }
