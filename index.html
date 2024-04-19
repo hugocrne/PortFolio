@@ -39,7 +39,7 @@
                         <div class="home-info padd-15">
                             <h3 class="hello">Bonjour, je m'appelle <span class="name">Hugo Creneau</span></h3>
                             <h3 class="my-profession">Je suis <span class="typing">developpeur</span></h3>
-                            <p>Je suis étudiant en première année de BUT Informatique et je m'oriente pour la suite de mes études vers l'option développement web. Je suis actuellement à la recherche d'une alternance a compter de septembre prochain en tant que développeur web.</p>
+                            <p>Je suis étudiant en première année de BUT Informatique et je m'oriente pour la suite de mes études vers l'option développement web. Je suis actuellement à la recherche d'une alternance à compter de septembre prochain en tant que développeur informatique</p>
                             <p>Je vous invite à télécharger mon CV ci-dessous ou à consulter mon LinkedIn.</p>
                             <a href="#" class="btn" id="boutonCV">Mon CV</a>
                             <a href="https://www.linkedin.com/in/hugo-creneau-53a7402a8/" class="btn" id="boutonLI">Mon LinkedIn</a>
@@ -297,12 +297,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>My Projects</h2>
+                            <h2>Mes Projets</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects :</h2>
+                            <h2>Mes derniers projets</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -358,10 +358,16 @@
                                 </div>
                                 <div class="portfolio-description-img3 padd-15" id="portfolio-3">
                                     <h3>Implémentation du jeu TicTacToe en C</h3>
-                                    <p>Cette version en JavaScript du jeu de Morpion, aussi connu sous le nom de Tic-Tac-Toe, propose un divertissement classique avec une interface moderne. Deux joueurs s'affrontent pour remplir une grille 3x3 avec leurs symboles respectifs, souvent X et O, en alternance. Le jeu offre une mécanique simple mais stratégique, où les joueurs cherchent à aligner trois de leurs symboles horizontalement, verticalement ou en diagonale pour gagner. Une interface utilisateur intuitive permet des parties fluides, avec des indicateurs visuels pour les coups valides et le résultat du match. Avec des défis rapides et une rejouabilité instantanée, ce Morpion est un classique indémodable.</p>
-                                    <br>
-                                    <p>Voici le code source ci-dessous :</p>
-                                    <br>
+                                    <h4>Contexte :</h4>
+                                    <p>Au tout début de mon aventure dans la programmation, je recherchais un petit projet à réaliser à la fin de mes cours de C, j'ai eu l'idée de réaliser une implémentationd du jeu du Morpion, TicTacToe en anglais.</p>
+                                    <h4>Objectif :</h4>
+                                    <p>L'objectif était de réaliser uniquement en C une implémentation du jeu du morpion qui devra s'éxecuter sur terminal.</p>
+                                    <h4>Travail Réalisé :</h4>
+                                    <p>- J'ai premièrement crée une matrice 3x3 pour le plateau de jeu, chaque case devra accueillir un pion, celui de l'un des deux joueurs.</p>
+                                    <p>- J'ai ensuite concu la partie ainsi que les conditions de victoire (égalité ou 3 pions d'un même joueur alignés).</p>
+                                    <p>- Pour finir, j'ai crée les joueurs et l'ordinateur qui réalise des mouvements aléatoire. Même si ce n'est pas un adversaire de taille, il convient au test tu jeu.</p>
+                                    <h4>Resultat :</h4>
+                                    <p>J'ai obtenu un jeu fonctionnel codé uniquement en C sans utiliser de bibliothèques pouvant me faciliter la tache. J'ai aussi pu confirmer ce que l'ai appris durant les cours de C.</p>
                                     <a href="https://github.com/hugocrne/TicTacToe-game-in-C">Code Source</a>
                                 </div>
                             </div>
@@ -373,7 +379,17 @@
                                 </div>
                                 <div class="portfolio-description-img4 padd-15" id="portfolio-4">
                                     <h3>Création d'un système réseau</h3>
-                                    <p>La création d'un réseau, durant un projet universitaire sans la supervision d'un professeur, via le protocole FTP permet le partage sécurisé de fichiers, tandis que la mise en place d'un serveur Apache offre la possibilité d'héberger des sites web avec stabilité et flexibilité. En parallèle, établir une communication SSH garantit un accès distant sécurisé aux systèmes informatiques. Ces processus impliquent la configuration minutieuse des paramètres de sécurité, des autorisations d'accès et des protocoles cryptographiques pour assurer la confidentialité des données et la sécurité des connexions. En combinant ces technologies, les utilisateurs peuvent créer un environnement réseau robuste, propice au partage de données et à la gestion à distance des systèmes.</p>
+                                    <h4>Contexte :</h4>
+                                    <p>Ce projet est un projet universitaire réalisé sous la supervision de notre professeur de réseaux.</p>
+                                    <h4>Objectif :</h4>
+                                    <p>Je devais, à partir d'une machine virutelle, créer des communications entre plusieurs machines à l'aide du protocode FTP permettant leur commmunication.</p>
+                                    <h4>Travail Réalisé :</h4>
+                                    <p>- J'ai premièrement du configurer les adresses IP des différentes machines en configurant les fichiers "/etc/hosts" "/etc/hostname" et "/etc/network/interfaces" grace à cela, les machines peuvent se "Ping" c'est à dire s'envoyer des signaux et donc des paquets.</p>
+                                    <p>- J'ai ensuite du configurer un server web Apache qui affichait une page web par défaut dés qu'il était consulté.</p>
+                                    <p>- Enfin, j'ai configuré une communication ssh entre les différentes machines afin qu'elles puissnet récuperer des fichiers l'une chez l'autre à tavers différents utilisateurs.</p>
+                                    <p>- Afin de sécuriser ce réseau, j'ai utilisé le logiciel fail2ban et je l'ai configuré afin de me protéger des attaques DDOS, c'està dire un envoi massif de paquets à mon server faisant planter le réseau. J'ai pu configurer un système de banissement des adresses IP ainsi qu'une suspension momentannée de certaines.</p>
+                                    <h4>Resultat :</h4>
+                                    <p>J'ai pu réaliser presque toutes les taches qui m'étaient demandées, j'ai pour cela reçu la note de 18/20 pour une moyenne de classe aux alentours de 14.</p>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +400,17 @@
                                 </div>
                                 <div class="portfolio-description-img5 padd-15" id="portfolio-5">
                                     <h3>Création de base de données</h3>
-                                    <p>La mise en place d'une base de données fictive dans PostgreSQL, dans le cadre d'une SAE non supervisée par un professeur, pour la société leader de la grande distribution, AskehCorp, implique la conception et la configuration d'une infrastructure robuste pour gérer efficacement les données commerciales. Cette base de données comprendrait des tables pour stocker les informations sur les produits, les clients, les commandes, les fournisseurs et les transactions financières. En outre, des vues et des procédures stockées pourraient être mises en place pour simplifier les rapports et les analyses. La sécurité des données serait une priorité, avec des politiques d'accès strictes et des sauvegardes régulières pour garantir l'intégrité des données. En intégrant des fonctionnalités avancées telles que la réplication et la gestion des performances, cette base de données PostgreSQL fournirait à AskehCorp les outils nécessaires pour gérer efficacement ses opérations de grande distribution.</p>
+                                    <h4>Contexte :</h4>
+                                    <p>Pour ce projet universitaire non supervisé par un professeur, nous devions, en équipe de 4, créer la base de données d'une entreprise fictive</p>
+                                    <h4>Objectif :</h4>
+                                    <p>Nous devions créer la base de donnée de l'entreprise fictive AskehCorp, une entreprise leader de la grande distribution. A l'issue de ce travail, nous devions rendre un Modèle Conceptuel de Données (MCD) qui décrit chacune de nos tables SQL ainsi qu'un script PostgreSQL créant ces différentes tables, nous devions également réaliser un oral afin de présenter notre travail à un professeur.</p>
+                                    <h4>Travail Réalisé :</h4>
+                                    <p>- Premièrement, il a fallu créer le MCD de la base de données, pour cela, je me suis inspiré de celui de l'entreprise Carrefour car notre entreprise s'organisais sous la même forme.</p>
+                                    <p>- Ensuite, il a fallu ecrire en PostgreSQL le code permettant la création des différentes tables. Celles-ci présentent des particularités comme par éxemple le fait qu'une donnée doit être impérativement remplie.</p>
+                                    <p>- Il a ensuite fallu remplir cette base de données, pour cela, j'ai généré avec de l'IA plusieurs itérations du contenu de chaque table.</p>
+                                    <p>- Enfin, j'ai écrit des requètes SQL demandant à la base de données des informations telles que le pays dans lequel il y à le plus de commandes ou le fournisseur coutant le plus cher.</p>
+                                    <h4>Resultat :</h4>
+                                    <p>Le professeur était très satisfait de notre travail car nous avions réalisé toutes les taches qui nous étaient demandées, malgré cela, notre code nécessitait quelques optimisations. Nous avons obtenu la note de 12.5/14 pour une moyenne à 10.</p>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +421,10 @@
                                 </div>
                                 <div class="portfolio-description-img6 padd-15" id="portfolio-6">
                                     <h3>Implémentation d'un jeu de Dames en C# XAML</h3>
-                                    <p>L'implémentation d'un jeu de dames en C# avec XAML, dans le cas d'une SAE supervisée par des professeurs, nécessite la création d'une interface utilisateur interactive et la logique de jeu correspondante. Les éléments visuels incluraient une grille de cases représentant le plateau de jeu, avec des pions pour chaque joueur. Les fonctionnalités du jeu comprendraient la sélection et le déplacement des pions, la gestion des sauts pour capturer les pions adverses, ainsi que la promotion des pions à des dames en cas d'atteinte de la ligne adverse. En outre, des fonctionnalités telles que l'indication des mouvements légaux et la détection de fin de partie seraient intégrées pour offrir une expérience de jeu fluide et engageante.</p>
+                                    <h4>Contexte :</h4>
+                                    <h4>Objectif :</h4>
+                                    <h4>Travail Réalisé :</h4>
+                                    <h4>Resultat :</h4>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 var typed = new Typed(".typing", {
-    strings: ["", "Developpeur", "Developpeur Web", "Developpeur Applicatif", "Developpeur Mobile", "Developpeur Objet"],
-    typeSpeed: 100,
+    strings: ["", "Developpeur", "Developpeur Web", "Developpeur Front-end", "Developpeur Mobile"],
+    typeSpeed: 150,
     BackSpeed: 60,
     loop: true
 });
@@ -18,7 +18,6 @@ for (let i = 0; i < totalNavList; i++) {
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector("a").classList.contains("active")) {
                 addBackSection(j);
-                //allSelection[j].classList.add("back-section");
             }
             navList[j].querySelector("a").classList.remove("active");
         }
