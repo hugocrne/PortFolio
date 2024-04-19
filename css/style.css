@@ -869,10 +869,18 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-description-img5,
 .portfolio .portfolio-item-inner .portfolio-description-img6 {
     display: block;
-    text-align: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .portfolio-description-img1 h3,
+.portfolio .portfolio-item-inner .portfolio-description-img2 h3,
+.portfolio .portfolio-item-inner .portfolio-description-img3 h3,
+.portfolio .portfolio-item-inner .portfolio-description-img4 h3,
+.portfolio .portfolio-item-inner .portfolio-description-img5 h3,
+.portfolio .portfolio-item-inner .portfolio-description-img6 h3 {
+    text-align: center;
 }
 
 .portfolio .portfolio-item-inner .portfolio-description-img1.show,
@@ -882,7 +890,8 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-description-img5.show,
 .portfolio .portfolio-item-inner .portfolio-description-img6.show {
     display: block;
-    max-height: 700px;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 .portfolio .portfolio-item-inner .portfolio-description-img1 a,
@@ -892,7 +901,7 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-description-img5 a,
 .portfolio .portfolio-item-inner .portfolio-description-img6 a {
     text-decoration: none;
-    color: var(--text-black-700);
+    color: var(--text-black-900);
 }
 
 .contact-title

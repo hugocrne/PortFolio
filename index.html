@@ -311,13 +311,20 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-1')">
                                     <img src="images/CryptoCypher.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img1" id="portfolio-1">
+                                <div class="portfolio-description-img1 padd-15" id="portfolio-1">
                                     <h3>Logiciel de Cryptage de Mot de Passe</h3>
-                                    <p>Cette application de cryptage de mots de passe utilise le puissant algorithme AES pour garantir la sécurité des données. Elle offre un stockage sécurisé des mots de passe, une génération robuste de nouveaux mots de passe, une gestion centralisée pour une organisation efficace, un partage sécurisé entre utilisateurs autorisés, et une authentification à deux facteurs pour renforcer la sécurité. AES assure un niveau élevé de protection des informations sensibles, tandis que les fonctionnalités de gestion simplifient la gestion des comptes.</p>
-                                    <br>
-                                    <p>Voici le code source ci-dessous :</p>
-                                    <br>
-                                    <a href="https://github.com/sagitarius115/CryptoCypher">Code Source</a>
+                                    <h4>Contexte :</h4>
+                                    <p>Il est difficile de créer des mots de passe sécurisés, c'est pour cela que j'ai choisi de développer un logiciel permettant de rendre nos mots de passe faibles... sécurisés.</p>
+                                    <h4>Objectif :</h4>
+                                    <p>L'objectif est de réaliser en C un logiciel permettant de crypter des mots de passe.</p>
+                                    <h4>Travail Réalisé :</h4>
+                                    <p>- J'ai premièrement choisi mon moyen de cryptage, j'ai choisi un codage par clé AES pour deux raisons, la sécurité de ce système et la possibilité de ne pas utiliser de bibliothèque annexe dont je ne connais pas le fonctionnement.</p>
+                                    <p>- J'ai ensuite implémenté le chiffrement des mots de passe en fonction d'une clé arbitraire renseignée dans la fonction de test</p>
+                                    <p>- Pour le stockage, j'ai choisi le stockage dans un fichier binaire afin que la lecture de celui-ci soit la plus rapide possible</p>
+                                    <p>- Chaque mot de passe étant renseigné avec une clé (ce n'est pas la clé AES bien sur) étant par exemple un ID ou un URL selon le bon vouloir de l'utilisateur, il est possible d'aller chercher dans le fichier un mot de passe précis en connaissant la clé à la manière d'un dictionnaire.</p>
+                                    <h4>Resultat :</h4>
+                                    <p>Pour le moment, il n'y a pas de résultat ecxepté le code source que je vous fournit sur le lien ci-dessous car ce projet est toujours en développement.</p>
+                                    <a href="https://github.com/sagitarius115/CryptoCypher">Cliquez ici pour consulter le code source</a>
                                 </div>
                             </div>
                         </div>
@@ -326,12 +333,20 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-2')">
                                     <img src="images/PacManJS.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img2" id="portfolio-2">
+                                <div class="portfolio-description-img2 padd-15" id="portfolio-2">
                                     <h3>Implémentation du jeu PacMan en JavaScript</h3>
-                                    <p>Cette version de Pac-Man, développée en JavaScript, offre une expérience fidèle au classique tout en introduisant des fonctionnalités modernes. Le joueur contrôle Pac-Man pour collecter des points tout en évitant les fantômes. Le jeu comprend des graphismes rétro, une mécanique de jeu fluide et des niveaux progressivement plus difficiles. Les bonus spéciaux, tels que les superpac-gommes, ajoutent de l'excitation. Une interface utilisateur intuitive permet une immersion facile dans le jeu, tandis que les effets sonores nostalgiques ajoutent à l'ambiance. Avec des contrôles simples et une rejouabilité élevée, ce Pac-Man est un plaisir classique réinventé.</p>
-                                    <br>
-                                    <p>Voici le code source ci-dessous :</p>
-                                    <br>
+                                    <h4>Contexte :</h4>
+                                    <p>Je suis passionné de jeu vidéo et j'ai toujours voulu en créer un, également passionné par le développement web, j'ai eu envie d'apprendre le JavaScript, j'ai donc voulu conjuguer ces deux envies.</p>
+                                    <h4>Objectif :</h4>
+                                    <p>L'objectif est de créer une implémentation du jeu PacMan en JavaScript</p>
+                                    <h4>Travail Réalisé :</h4>
+                                    <p>- J'ai premièrement choisi la manière dont je voulais créer le plateau, pour cela, j'ai crée une matrice remplie des chiffres 1 et 2, 1 lorsque c'est un mur et 2 lorsque la voie est libre.</p>
+                                    <p>- J'ai ensuite crée le comportement du personnage jouable en l'animane avec des sprites trouvés sur internet ainsi qu'en codant ses différentes méthodes et en créant les collisions avec les murs.</p>
+                                    <p>- Pour les ennemis, les 4 fantomes, je leur ai codé un comportement plus ou moins aléatoire. En effet, ils cherchent à atteindre PacMan si celui-ci n'est pas trop loin, sinon leurs mouvements sont aléatoires.</p>
+                                    <p>- Pour finir, j'ai implémenté les intéractions entre PacMan et les fantomes en créant le système de vies, j'ai mis sur le plateau les "Gums" que PacMan doit manger et j'ai implémenté le visuel du jeu.</p>
+                                    <h4>Resultat :</h4>
+                                    <p>Je possède maintenant un jeu PacMan fonctionnel qui se joue avec les flèches directionnelles et j'ai pu apprendre les bases du JavaScript.</p>
+                                    <p>Vous pouvez retrouver le jeu en cliquant <a href="/pacman/index.html">ici</a> ou consulter le code source ci-dessous.</p>
                                     <a href="https://github.com/hugocrne/PacMan_Game_js">Code Source</a>
                                 </div>
                             </div>
@@ -341,7 +356,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-3')">
                                     <img src="images/TicTacToeC.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img3" id="portfolio-3">
+                                <div class="portfolio-description-img3 padd-15" id="portfolio-3">
                                     <h3>Implémentation du jeu TicTacToe en C</h3>
                                     <p>Cette version en JavaScript du jeu de Morpion, aussi connu sous le nom de Tic-Tac-Toe, propose un divertissement classique avec une interface moderne. Deux joueurs s'affrontent pour remplir une grille 3x3 avec leurs symboles respectifs, souvent X et O, en alternance. Le jeu offre une mécanique simple mais stratégique, où les joueurs cherchent à aligner trois de leurs symboles horizontalement, verticalement ou en diagonale pour gagner. Une interface utilisateur intuitive permet des parties fluides, avec des indicateurs visuels pour les coups valides et le résultat du match. Avec des défis rapides et une rejouabilité instantanée, ce Morpion est un classique indémodable.</p>
                                     <br>
@@ -356,7 +371,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-4')">
                                     <img src="images/Reseau.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img4" id="portfolio-4">
+                                <div class="portfolio-description-img4 padd-15" id="portfolio-4">
                                     <h3>Création d'un système réseau</h3>
                                     <p>La création d'un réseau, durant un projet universitaire sans la supervision d'un professeur, via le protocole FTP permet le partage sécurisé de fichiers, tandis que la mise en place d'un serveur Apache offre la possibilité d'héberger des sites web avec stabilité et flexibilité. En parallèle, établir une communication SSH garantit un accès distant sécurisé aux systèmes informatiques. Ces processus impliquent la configuration minutieuse des paramètres de sécurité, des autorisations d'accès et des protocoles cryptographiques pour assurer la confidentialité des données et la sécurité des connexions. En combinant ces technologies, les utilisateurs peuvent créer un environnement réseau robuste, propice au partage de données et à la gestion à distance des systèmes.</p>
                                 </div>
@@ -367,7 +382,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-5')">
                                     <img src="images/MLD.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img5" id="portfolio-5">
+                                <div class="portfolio-description-img5 padd-15" id="portfolio-5">
                                     <h3>Création de base de données</h3>
                                     <p>La mise en place d'une base de données fictive dans PostgreSQL, dans le cadre d'une SAE non supervisée par un professeur, pour la société leader de la grande distribution, AskehCorp, implique la conception et la configuration d'une infrastructure robuste pour gérer efficacement les données commerciales. Cette base de données comprendrait des tables pour stocker les informations sur les produits, les clients, les commandes, les fournisseurs et les transactions financières. En outre, des vues et des procédures stockées pourraient être mises en place pour simplifier les rapports et les analyses. La sécurité des données serait une priorité, avec des politiques d'accès strictes et des sauvegardes régulières pour garantir l'intégrité des données. En intégrant des fonctionnalités avancées telles que la réplication et la gestion des performances, cette base de données PostgreSQL fournirait à AskehCorp les outils nécessaires pour gérer efficacement ses opérations de grande distribution.</p>
                                 </div>
@@ -378,7 +393,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-6')">
                                     <img src="images/Dames.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img6" id="portfolio-6">
+                                <div class="portfolio-description-img6 padd-15" id="portfolio-6">
                                     <h3>Implémentation d'un jeu de Dames en C# XAML</h3>
                                     <p>L'implémentation d'un jeu de dames en C# avec XAML, dans le cas d'une SAE supervisée par des professeurs, nécessite la création d'une interface utilisateur interactive et la logique de jeu correspondante. Les éléments visuels incluraient une grille de cases représentant le plateau de jeu, avec des pions pour chaque joueur. Les fonctionnalités du jeu comprendraient la sélection et le déplacement des pions, la gestion des sauts pour capturer les pions adverses, ainsi que la promotion des pions à des dames en cas d'atteinte de la ligne adverse. En outre, des fonctionnalités telles que l'indication des mouvements légaux et la détection de fin de partie seraient intégrées pour offrir une expérience de jeu fluide et engageante.</p>
                                 </div>
