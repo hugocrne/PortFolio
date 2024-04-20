@@ -231,7 +231,7 @@
                                     <i class="fa fa-code"></i>
                                 </div>
                                 <h4>Coding</h4>
-                                <p>Le coding, ou codage, fait référence à l'acte d'écrire du code informatique dans des langages de programmation spécifiques, permettant de créer des applications, des sites web, des logiciels et bien plus encore. C'est une pratique qui me passionne de part la liberté que cela procure de pourvoir tout créer à partir de rien.</p>
+                                <p>Le coding, ou codage, fait référence à l'acte d'écrire du code informatique dans des langages de programmation spécifiques, permettant de créer des applications, des sites web, des logiciels et bien plus encore. C'est une pratique qui me passionne de part la liberté que cela procure de pourvoir tout créer à partir de rien. J'ai pour habiotude d'utiliser l'éditeur de code Visual Studio Code car celui-ci à un design confortable ainsi que de nombreuses fonctionnalités utiles telles que Git qui permet le partage de mon travail avec mes coéquipiers.</p>
                             </div>
                         </div>
                         <div class="competences-item padd-15">
@@ -311,7 +311,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-1')">
                                     <img src="images/CryptoCypher.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img1 padd-15" id="portfolio-1">
+                                <div class="portfolio-description-img1 pdesc hidden padd-15" id="portfolio-1">
                                     <h3>Logiciel de Cryptage de Mot de Passe</h3>
                                     <h4>Contexte :</h4>
                                     <p>Il est difficile de créer des mots de passe sécurisés, c'est pour cela que j'ai choisi de développer un logiciel permettant de rendre nos mots de passe faibles... sécurisés.</p>
@@ -333,7 +333,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-2')">
                                     <img src="images/PacManJS.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img2 padd-15" id="portfolio-2">
+                                <div class="portfolio-description-img2 pdesc hidden padd-15" id="portfolio-2">
                                     <h3>Implémentation du jeu PacMan en JavaScript</h3>
                                     <h4>Contexte :</h4>
                                     <p>Je suis passionné de jeu vidéo et j'ai toujours voulu en créer un, également passionné par le développement web, j'ai eu envie d'apprendre le JavaScript, j'ai donc voulu conjuguer ces deux envies.</p>
@@ -356,7 +356,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-3')">
                                     <img src="images/TicTacToeC.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img3 padd-15" id="portfolio-3">
+                                <div class="portfolio-description-img3 pdesc hidden padd-15" id="portfolio-3">
                                     <h3>Implémentation du jeu TicTacToe en C</h3>
                                     <h4>Contexte :</h4>
                                     <p>Au tout début de mon aventure dans la programmation, je recherchais un petit projet à réaliser à la fin de mes cours de C, j'ai eu l'idée de réaliser une implémentationd du jeu du Morpion, TicTacToe en anglais.</p>
@@ -377,7 +377,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-4')">
                                     <img src="images/Reseau.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img4 padd-15" id="portfolio-4">
+                                <div class="portfolio-description-img4 pdesc hidden padd-15" id="portfolio-4">
                                     <h3>Création d'un système réseau</h3>
                                     <h4>Contexte :</h4>
                                     <p>Ce projet est un projet universitaire réalisé sous la supervision de notre professeur de réseaux.</p>
@@ -398,7 +398,7 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-5')">
                                     <img src="images/MLD.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img5 padd-15" id="portfolio-5">
+                                <div class="portfolio-description-img5 pdesc hidden padd-15" id="portfolio-5">
                                     <h3>Création de base de données</h3>
                                     <h4>Contexte :</h4>
                                     <p>Pour ce projet universitaire non supervisé par un professeur, nous devions, en équipe de 4, créer la base de données d'une entreprise fictive</p>
@@ -419,12 +419,21 @@
                                 <div class="portfolio-img" onclick="toggleDescription('portfolio-6')">
                                     <img src="images/Dames.png" alt="">
                                 </div>
-                                <div class="portfolio-description-img6 padd-15" id="portfolio-6">
+                                <div class="portfolio-description-img6 pdesc hidden padd-15" id="portfolio-6">
                                     <h3>Implémentation d'un jeu de Dames en C# XAML</h3>
                                     <h4>Contexte :</h4>
+                                    <p>Ce projet est un projet universitaire réalisé en groupe de 3 sous la supervision d'un professeur, nous devons créer une implémentation d'un jeu de Dames en utilisant les technologies .NET.</p>
                                     <h4>Objectif :</h4>
+                                    <p>Nous devons créer de toute pièce un jeu de dame qui s'executera sur windows, pour cela, nous utilisons les langagesXAML pour le front-end et C# pour le back-end.</p>
                                     <h4>Travail Réalisé :</h4>
+                                    <p>- Premièrement, il a fallu créer une documentation pour ce projet, dans celle ci, nous avons mis sur papier les règles du jeu, ce que nous allons faire, des personnas et des user-story.</p>
+                                    <p>- Il a ensuite fallu penser le design de notre application; Pour cela, j'ai utilisé l'outil Figma qui me permet de créer facilement des designs plutot complets.</p>
+                                    <p>- A partir de ces maquettes, nous avons crée un storyboard, c'est à dire un document expliquant quelles seront les intéractions entre les différentes pages par exemple à travers des boutons.</p>
+                                    <p>- Nous sommes ensuite passés à la création du code pur du jeu. Pour nous aider dans ce travail, il a fallu créer des diagrames de classe ainsi que des diagrames de paquetage.</p>
+                                    <p>- Après l'implémentation de ce travailen C# est venu l'étape de la gestion de la persistance de l'application. En effet, nous voulons implémenter un système de comptes dans notre application. Pour cela, nous avons utilisé un système comprenant des fichier JSON.</p>
+                                    <p>- Enfin est venu l'étape du data-binding, c'est à dire la liaison du code C# du back-end avec l'interface utilisateur.</p>                                    
                                     <h4>Resultat :</h4>
+                                    <p>Nous n'avons pas eu de notation pour le moment sur ce travail. Mais notre professeur nous à fait par de son enthousiasme autour de notre projet. J'ai également pu découvrir le développement en C# ainsi qu'en XAML, les technologies .NET ainsi que l'utilisation de l'outil Visual Studio Community.</p>
                                 </div>
                             </div>
                         </div>

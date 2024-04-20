@@ -1,7 +1,7 @@
 var typed = new Typed(".typing", {
     strings: ["", "Developpeur", "Developpeur Web", "Developpeur Front-end", "Developpeur Mobile"],
     typeSpeed: 150,
-    BackSpeed: 60,
+    backSpeed: 60, // Le "B" de "backSpeed" doit être en minuscules
     loop: true
 });
 
@@ -96,16 +96,39 @@ document.getElementById("boutonCV").addEventListener("click", function() {
     document.body.removeChild(link);
 });
 
-function toggleDescription(portfolioId) {
-    var description = document.getElementById(portfolioId);
-    description.classList.toggle("show");
+function toggleDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    if (description.classList.contains('hidden')){
+        description.classList.remove('hidden');
+        description.classList.add('show');
+    } else {
+        if (description.classList.contains('show')){
+            description.classList.remove('show');
+            description.classList.add('hidden');
+        }
+    }
 }
 
-
-// Appel initial pour fermer toutes les descriptions au chargement de la page
-toggleDescription("portfolio-1");
-toggleDescription("portfolio-2");
-toggleDescription("portfolio-3");
-toggleDescription("portfolio-4");
-toggleDescription("portfolio-5");
-toggleDescription("portfolio-6");
+var portfolioImages = document.querySelectorAll('.portfolio-img');
+portfolioImages.forEach(function(image, index) {
+    image.addEventListener('click', function() {
+        if(document.getElementById('portfolio-description-1')){
+            toggleDescription('portfolio-description-1');
+        }
+        if(document.getElementById('portfolio-description-2')){
+            toggleDescription('portfolio-description-2');
+        }
+        if(document.getElementById('portfolio-description-3')){
+            toggleDescription('portfolio-description-3');
+        }
+        if(document.getElementById('portfolio-description-4')){
+            toggleDescription('portfolio-description-4');
+        }
+        if(document.getElementById('portfolio-description-5')){
+            toggleDescription('portfolio-description-5');
+        }
+        if(document.getElementById('portfolio-description-6')){
+            toggleDescription('portfolio-description-6');
+        }
+    });
+});
