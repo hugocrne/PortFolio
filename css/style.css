@@ -395,7 +395,7 @@ h3.my-profession
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 30px;
-    bottom: 130px;
+    bottom: 400px;
 }
 
 .home-img::before {
@@ -824,11 +824,23 @@ h3.my-profession
 
 .portfolio .portfolio-heading {
     flex: 0 0 100%;
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 40px;
 }
 
 .portfolio .portfolio-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+
+.portfolio .portfolio-heading2 {
+    flex: 0 0 100%;
+    margin-top: 20px;
+    width: 1000px;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading2 h2 {
     color: var(--text-black-900);
     font-weight: 500;
 }
