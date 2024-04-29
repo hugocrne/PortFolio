@@ -846,8 +846,8 @@ h3.my-profession
 }
 
 .portfolio .portfolio-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 
@@ -858,6 +858,7 @@ h3.my-profession
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
+    max-width: 33.33%;
 }
 
 .portfolio .portfolio-item-inner:hover{
@@ -877,7 +878,7 @@ h3.my-profession
 
 .portfolio .portfolio-item-inner .pdesc {
     display: none;
-    max-height: 0;
+    max-width: 0;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -887,29 +888,29 @@ h3.my-profession
 }
 
 .pdesc {
-    max-height: 500px;
+    max-width: 1000px;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s ease;
 }
 
 .show {
-    max-height: 500px;
+    height: 1000px;
     overflow: auto;
     opacity: 1;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s ease;
 }
 
 .hidden {
-    max-height: 0;
+    max-width: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s ease;
 }
 
 .portfolio .portfolio-item-inner .pdesc.show {
     display: block;
-    max-height: 500px;
+    max-width: 1000px;
     overflow-y: auto;
     transition: max-height 0.3s ease, opacity 0.3s ease;
 }
