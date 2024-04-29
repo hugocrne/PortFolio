@@ -1,7 +1,7 @@
 var typed = new Typed(".typing", {
-    strings: ["", "Developpeur", "Developpeur Web", "Developpeur Front-end", "Developpeur Mobile"],
+    strings: ["", "Developpeur", "Developpeur Web", "Developpeur Front", "Developpeur Back", "Developpeur Mobile"],
     typeSpeed: 150,
-    backSpeed: 60, // Le "B" de "backSpeed" doit être en minuscules
+    backSpeed: 60, 
     loop: true
 });
 
@@ -59,7 +59,6 @@ function updateNav(element) {
 
 document.querySelector(".hire-me").addEventListener("click", function () {
     const sectionIndex = this.getAttribute("data-section-index");
-    //console.log(sectionIndex);
     showSection(this);
     updateNav(this);
     removeBackSection();
@@ -73,7 +72,7 @@ navTogglerBtn.addEventListener("click", () => {
 });
 
 function asideSectionTogglerBtn() {
-    aside.classList.add("open"); // Utiliser la méthode add() pour ajouter une classe
+    aside.classList.add("open"); 
     navTogglerBtn.classList.toggle("open");
     for (let i = 0; i < totalSelection; i++) {
         allSelection[i].classList.toggle("open");
@@ -83,7 +82,7 @@ function asideSectionTogglerBtn() {
 const asideLinks = document.querySelectorAll(".aside a");
 asideLinks.forEach(link => {
     link.addEventListener("click", () => {
-        aside.classList.remove("open"); // Fermer le aside en supprimant la classe "open"
+        aside.classList.remove("open"); 
     });
 });
 
