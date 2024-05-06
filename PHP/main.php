@@ -14,6 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
 
-    echo "<script>alert('Votre message n'a pas été envoyé car ce site n'est pas relié à un serveur de messagerie. Contactez l'adresse hugo.creneau@etu.uca.fr pour plus d'informations.');</script>";
+    if (mail($to, $email_subject, $email_body, $headers)) {
+        header("Location: send.html");
+        exit;
+    } else {
+        echo "Failed to send the email.";
+    }
 }
 ?>

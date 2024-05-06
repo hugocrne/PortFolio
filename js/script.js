@@ -1,7 +1,6 @@
 var typed = new Typed(".typing", {
   strings: [
     "",
-    "Developpeur",
     "Developpeur Web",
     "Developpeur Front-end",
     "Developpeur Back-end",
@@ -66,14 +65,6 @@ function updateNav(element) {
     }
   }
 }
-
-document.querySelector(".hire-me").addEventListener("click", function () {
-  const sectionIndex = this.getAttribute("data-section-index");
-  showSection(this);
-  updateNav(this);
-  removeBackSection();
-  addBackSection(sectionIndex);
-});
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
   aside = document.querySelector(".aside");
