@@ -88,11 +88,9 @@ asideLinks.forEach(link => {
 
 document.getElementById("boutonCV").addEventListener("click", function() {
     const link = document.createElement("a");
-    link.setAttribute("href", "images/CVHugoCRENEAU.pdf");
+    link.setAttribute("href", "./images/CVHugoCRENEAU.pdf");
     link.setAttribute("download", "");
-    document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
 });
 
 function toggleDescription(descriptionId) {

@@ -925,10 +925,6 @@ h3.my-profession
     overflow-x: auto;
 }
 
-.portfolio .portfolio-item-inner .pdesc.show:hover {
-    box-shadow: 0 0 30px black;
-}
-
 .portfolio .portfolio-item-inner .pdesc a {
     text-decoration: none;
     color: var(--text-black-900);
