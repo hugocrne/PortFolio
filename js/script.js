@@ -87,13 +87,6 @@ asideLinks.forEach((link) => {
   });
 });
 
-document.getElementById("boutonCV").addEventListener("click", function () {
-  const link = document.createElement("a");
-  link.setAttribute("href", "./images/CVHugoCRENEAU.pdf");
-  link.setAttribute("download", "");
-  link.click();
-});
-
 function toggleDescription(descriptionId) {
   var description = document.getElementById(descriptionId);
   if (description.classList.contains("hidden")) {
