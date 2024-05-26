@@ -929,6 +929,16 @@ h3.my-profession
 .portfolio .portfolio-item-inner .pdesc a {
     text-decoration: none;
     color: var(--text-black-900);
+    width: auto;
+    place-self: center;
+    border: solid #151515 1px;
+    padding: 2px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .pdesc a:hover {
+    background: var(--bg-black-50)
 }
 
 .contact-title
