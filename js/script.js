@@ -123,3 +123,28 @@ portfolioImages.forEach(function (image, index) {
     }
   });
 });
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var formData = new FormData(this);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/PHP/main.php", true);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        if (xhr.responseText === "success") {
+          alert("Email envoyé avec succès!");
+        } else {
+          alert("Échec de l'envoi de l'email.");
+        }
+      } else {
+        alert("Une erreur s'est produite. Veuillez réessayer.");
+      }
+    };
+
+    xhr.send(formData);
+  });

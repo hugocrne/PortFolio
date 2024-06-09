@@ -11,13 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email_body = "You have received a new message from $name ($email):\n\n$message";
 
-    $headers = "From: $name <$email>\r\n";
+    $from = "hugo.crneau@gmail.com";
+
+    $headers = "From: $from\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     if (mail($to, $email_subject, $email_body, $headers)) {
-        header("Location: index.html");
-        exit;
+        echo "success";
     } else {
-        echo "Failed to send the email.";
+        echo "error";
     }
 }
+?>

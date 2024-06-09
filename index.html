@@ -746,34 +746,34 @@
                         me contacter au mail ci dessus)</h3>
                     <h4 class="contact-sub-title padd-15">JE REPONDS AUX MESSAGES</h4>
                     <div class="row">
-                        <form class="contact-form padd-15" action="/PHP/main.php" method="POST">
+                        <form id="contactForm" class="contact-form padd-15" method="POST">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <label for="textInput">Nom :</label>
-                                        <input id="textInput" type="text" class="form-control" placeholder="Nom">
+                                        <label for="nameInput">Nom :</label>
+                                        <input id="nameInput" name="name" type="text" class="form-control" placeholder="Nom" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <label for="mailInput">Email :</label>
-                                        <input id="mailInput" type="email" class="form-control" placeholder="Email">
+                                        <label for="emailInput">Email :</label>
+                                        <input id="emailInput" name="email" type="email" class="form-control" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <label for="descInput">Objet :</label>
-                                        <input id="descInput" type="text" class="form-control" placeholder="Objet">
+                                        <label for="subjectInput">Objet :</label>
+                                        <input id="subjectInput" name="subject" type="text" class="form-control" placeholder="Objet" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <label for="messageArea">Message :</label>
-                                        <textarea name="" class="form-control" id="messageArea" placeholder="Message"></textarea>
+                                        <label for="messageInput">Message :</label>
+                                        <textarea id="messageInput" name="message" class="form-control" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
