@@ -49,6 +49,7 @@
 .style-switcher .s-icon
 {
     position: absolute;
+    padding-top: 4px;
     height: 40px;
     width: 40px;
     text-align: center;
