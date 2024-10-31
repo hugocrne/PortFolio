@@ -6,20 +6,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     $to = "hugo.creneau@etu.uca.fr";
+    
+    $mail_subject = "Message de $name : $subject";
+    
+    $mail_message = "
+    Nom : $name\n
+    Email : $email\n
+    Sujet : $subject\n\n
+    Message :\n$message
+    ";
 
-    $email_subject = "New Contact Form Submission: $subject";
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
-    $email_body = "You have received a new message from $name ($email):\n\n$message";
-
-    $from = "hugo.crneau@gmail.com";
-
-    $headers = "From: $from\r\n";
-    $headers .= "Reply-To: $email\r\n";
-
-    if (mail($to, $email_subject, $email_body, $headers)) {
-        echo "success";
+    if (mail($to, $mail_subject, $mail_message, $headers)) {
+        echo "Votre message a été envoyé avec succès !";
     } else {
-        echo "error";
+        echo "Échec de l'envoi du message. Veuillez réessayer plus tard.";
     }
+} else {
+    echo "Méthode de requête non autorisée.";
 }
-?>

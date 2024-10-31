@@ -1,11 +1,5 @@
 var typed = new Typed(".typing", {
-  strings: [
-    "",
-    "Developpeur Web",
-    "Developpeur Front-end",
-    "Developpeur Back-end",
-    "Developpeur Mobile",
-  ],
+  strings: ["", "Developpeur Web", "Developpeur Android", "Developpeur Ios"],
   typeSpeed: 150,
   backSpeed: 60,
   loop: true,
